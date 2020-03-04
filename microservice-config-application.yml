@@ -1,22 +1,22 @@
-#×¢Òâ£ºÈç¹ûÔÚ¼ÇÊÂ±¾ÉÏ±àĞ´£¬ÏÂÃæµÄËõ½ø²»ÒªÊ¹ÓÃTabÀ´Ëõ½ø£¬²»È»±¨´í
 spring:
   profiles:
-    #  ¼¤»î¿ª·¢»·¾³ÅäÖÃ
+    # æ¿€æ´»å¼€å‘ç¯å¢ƒé…ç½®
     active: dev
 ---
 server:
-  # ¶Ë¿ÚºÅ
+  # ç«¯å£å·
   port: 4001
 spring:
-  #  ¿ª·¢»·¾³
+  # å¼€å‘ç¯å¢ƒ
   profiles: dev
   application:
     name: microservice-config-dev
 ---
 server:
+  # ç«¯å£å·
   port: 4002
 spring:
-  #  Éú²ú»·¾³
+  # ç”Ÿäº§ç¯å¢ƒ
   profiles: prod
   application:
     name: microservice-config-prod
