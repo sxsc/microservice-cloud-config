@@ -1,6 +1,7 @@
 spring:
   # 激活开发环境配置
-  profiles: dev
+  profiles:
+    active: dev
 ---
 server:
   port: 8001
@@ -59,7 +60,7 @@ jasypt:
     password: springcloud-micro-service
 
 spring:
-  profiles: dev
+  profiles: prod
   application:
     name: provider-product-eureka-hystrix-config
   datasource:
