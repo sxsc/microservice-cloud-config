@@ -18,7 +18,7 @@ jasypt:
 spring:
   profiles: dev
   application:
-    name: provider-product-eureka-hystrix-config
+    name: provider-product-eureka-hystrix-config-bus
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -62,7 +62,7 @@ jasypt:
 spring:
   profiles: prod
   application:
-    name: provider-product-eureka-hystrix-config
+    name: provider-product-eureka-hystrix-config-bus
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
