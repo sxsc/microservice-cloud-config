@@ -11,12 +11,12 @@ spring:
     name: microservice-config-eureka
 eureka:
   instance:
-    hostname: eureka6003
+    hostname: 192.168.10.130
   client:
     fetch-registry: false
     register-with-eureka: false
     service-url:
-      defaultZone: http://eureka6003:6003/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
   server:
     enable-self-preservation: false
 ---
@@ -33,6 +33,6 @@ eureka:
     fetch-registry: false
     register-with-eureka: false
     service-url:
-      defaultZone: http://eureka6003:6003/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
   server:
     enable-self-preservation: true
