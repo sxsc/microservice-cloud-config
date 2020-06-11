@@ -5,7 +5,7 @@ spring:
 
 ---
 emp:
-  name: www
+  name: Wang
 server:
   port: 8001
 mybatis:
